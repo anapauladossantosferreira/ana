@@ -1,40 +1,102 @@
-/* Novos estilos para o atendimento */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Header Atendente */
 .atendimento-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 25px;
-    background: #eef2f7;
+    background: #f8f9fa;
     padding: 15px;
     border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .avatar {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     border: 2px solid #007bff;
-    margin-right: 15px;
 }
 
 .balao-fala {
-    position: relative;
-    background: #fff;
+    margin-left: 15px;
+    background: #007bff;
+    color: white;
     padding: 10px 15px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+    border-radius: 0 15px 15px 15px;
     font-size: 0.9rem;
-    color: #444;
+    position: relative;
 }
 
-/* Pequena seta do balão de fala */
-.balao-fala::after {
-    content: '';
-    position: absolute;
-    left: -10px;
-    top: 50%;
-    transform: translateY(-50%);
-    border-width: 5px 10px 5px 0;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
+h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
