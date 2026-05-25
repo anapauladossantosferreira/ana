@@ -1,102 +1,47 @@
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
+.lista-container {
+    margin-top: 30px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
 }
 
-.container {
-    background: #ffffff;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+table {
     width: 100%;
-    max-width: 500px;
-}
-
-/* Header Atendente */
-.atendimento-header {
-    display: flex;
-    align-items: center;
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-}
-
-.avatar {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    border: 2px solid #007bff;
-}
-
-.balao-fala {
-    margin-left: 15px;
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 0 15px 15px 15px;
-    font-size: 0.9rem;
-    position: relative;
-}
-
-h2 {
-    color: #333;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Formulário */
-.input-group {
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-.row {
-    display: flex;
-    gap: 10px;
-}
-
-label {
+    border-collapse: collapse;
+    margin-top: 10px;
     font-size: 0.85rem;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 5px;
 }
 
-input, select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-}
-
-input:focus {
-    border-color: #007bff;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0,123,255,0.2);
-}
-
-button {
-    width: 100%;
+th, td {
+    text-align: left;
     padding: 12px;
-    background-color: #007bff;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-limpar {
+    margin-top: 15px;
+    background-color: #dc3545;
+    font-size: 0.8rem;
+    padding: 8px;
+}
+
+.btn-limpar:hover {
+    background-color: #c82333;
+}
+
+.btn-excluir {
+    background: #ff4d4d;
     color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
