@@ -1,2 +1,11 @@
-// No final da função de submit do script.js:
-document.querySelector('.balao-fala p').innerText = "Tudo pronto! Seu cadastro foi enviado.";
+document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Coleta de dados
+    const dadosCliente = {
+        nome: document.getElementById('nome').value,
+        email: document.getElementById('email').value,
+        cpf: document.getElementById('cpf').value,
+        telefone: document.getElementById('telefone').value,
+        idade: document.getElementById('idade').value,
+        estadoCivil: document.getElementById('estado
